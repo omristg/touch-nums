@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Nums</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<h1>Touch Nums</h1>
+
+<body onload="init()">
+    
+    <div class="level-slct">
+        choose level: <br>
+        16 <button onclick="init(4)" class="level-btn"></button>
+        25 <button onclick="init(5)" class="level-btn"></button>
+        36 <button onclick="init(6)" class="level-btn"></button>
+    </div>
+
+    
+    <div class="reset-menu">
+        <button onclick="init()" class="reset-btn">Play Again</button> <br>
+        Congrats!!! <br>
+    </div>
+    
+    <table class="board-style">
+        <tbody class="board"></tbody>
+    </table>
+    
+    <div class="timer"></div>
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
